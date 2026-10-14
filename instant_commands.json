@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "description": "User custom fast-lane instant commands (<300ms, no LLM)",
+  "custom_commands": [
+    {
+      "id": "instant_ping",
+      "phrases": ["ping jarvis", "jarvis speed test"],
+      "reply": "Instant lane online, responding in under 300ms! ⚡"
+    }
+  ]
+}

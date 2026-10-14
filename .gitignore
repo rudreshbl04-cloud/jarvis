@@ -1,0 +1,53 @@
+# Environment & Secrets
+.env
+.env.*
+settings.json
+settings.json.arc3.bak
+*.bak
+*.arc3_bak
+*.pre-arc.bak
+
+# Backups & Artifacts
+backups/
+artifacts/
+scratch/
+
+# User Data & Activity (Keep private data off public repos)
+sessions.json
+sessions.json.*
+notes.txt
+notes.txt.*
+reminders.json
+reminders.json.*
+memories.json
+memories.json.*
+activity.json
+activity.json.*
+documents.json
+documents.json.*
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Development Tools & Editors
+.aider*
+.vscode/
+.idea/
+
+# Offline Piper Neural TTS Engine & Voice Weights (>150 MB)
+piper/
+
+# Test Result Outputs
+tests/live_test_results.json
+
+# Legacy Prototype & Benchmark Cache
+jarvis_v1.py
+benchmark_results.json
+
+# Local QA & Repair Reports
+docs/reports/
+
+
