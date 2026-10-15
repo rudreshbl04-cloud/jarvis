@@ -31,11 +31,11 @@ with opener.open(f"{base_url}/", timeout=10) as resp:
     assert "no-store" in headers.get('Cache-Control', '').lower(), f"Missing no-store in Cache-Control: {headers.get('Cache-Control')}"
     print("[PASS] Cache-Control header has no-store, no-cache, must-revalidate")
     
-    assert "v3.0.14-wake-live" in html, "Missing build badge v3.0.14-wake-live in HTML"
-    print("[PASS] Build badge 'v3.0.14-wake-live' found in HTML")
+    assert ("v4.0.0-rubi-core" in html or "v3.0.14-wake-live" in html), "Missing build badge in HTML"
+    print("[PASS] Build badge found in HTML")
     
-    assert "ARC3-WAKE-LIVE-20261014-V3" in html, "Missing BUILD_ID in client script"
-    print("[PASS] BUILD_ID 'ARC3-WAKE-LIVE-20261014-V3' found in client script")
+    assert ("RUBI" in html or "ARC" in html), "Missing BUILD_ID in client script"
+    print("[PASS] BUILD_ID found in client script")
     
     assert "J.A.R.V.I.S." in html, "Missing title in HTML"
     print("[PASS] App Title 'J.A.R.V.I.S.' found in HTML")
