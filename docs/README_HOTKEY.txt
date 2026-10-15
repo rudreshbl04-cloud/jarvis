@@ -10,8 +10,8 @@ HOW TO ENABLE:
 1. Automatic: The hotkey helper is started automatically by start_jarvis.vbs
    in the background when Jarvis starts.
 2. Manual background run:
-   Run in PowerShell / Command Prompt:
-   pythonw C:\Users\Dell\myagent\jarvis_hotkey.py
+   Run in PowerShell / Command Prompt from project directory:
+   pythonw jarvis_hotkey.py
 
 HOW TO DISABLE:
 1. Open Task Manager, locate "Python" or "pythonw.exe" running jarvis_hotkey.py

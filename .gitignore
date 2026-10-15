@@ -6,6 +6,10 @@ settings.json.arc3.bak
 *.bak
 *.arc3_bak
 *.pre-arc.bak
+cert.pem
+key.pem
+*.pem
+*.pfx
 
 # Backups & Artifacts
 backups/
@@ -50,4 +54,20 @@ benchmark_results.json
 # Local QA & Repair Reports
 docs/reports/
 
+# Temporary Sync Artifacts
+.tmp.driveupload/
+
+# Android Build Outputs & Gradle Caches
+mobile/android/.gradle/
+mobile/android/build/
+mobile/android/app/build/
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+*.aar
+
+# Log Files
+*.log
 
