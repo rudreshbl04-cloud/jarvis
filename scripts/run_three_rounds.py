@@ -213,7 +213,7 @@ for round_num in range(1, 4):
     assert "notepad" in r_app.lower()
 
     # Verify Desktop Shortcut Jarvis.lnk
-    desktop_lnk = r"C:\Users\Dell\Desktop\Jarvis.lnk"
+    desktop_lnk = os.path.join(os.path.expanduser("~"), "Desktop", "Jarvis.lnk")
     assert os.path.exists(desktop_lnk), "Desktop shortcut Jarvis.lnk missing"
 
     dur = f"{(time.time()-t0):.2f}s"

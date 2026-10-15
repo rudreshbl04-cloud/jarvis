@@ -111,8 +111,8 @@ If Not jarvisRunning Then
     Dim pythonwExe
     If fso.FileExists(userProfile & "\anaconda3\pythonw.exe") Then
         pythonwExe = userProfile & "\anaconda3\pythonw.exe"
-    ElseIf fso.FileExists(localAppData & "\Microsoft\WindowsApps\pythonw.exe") Then
-        pythonwExe = localAppData & "\Microsoft\WindowsApps\pythonw.exe"
+    ElseIf fso.FileExists(localAppData & "\Programs\Python\Python312\pythonw.exe") Then
+        pythonwExe = localAppData & "\Programs\Python\Python312\pythonw.exe"
     Else
         pythonwExe = "pythonw.exe"
     End If

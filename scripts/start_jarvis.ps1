@@ -23,10 +23,15 @@ function Log([string]$msg) {
 Log "=== JARVIS Auto-Start Orchestrator Initiated ==="
 
 # 1. Locate Executables
-$PythonExe = "$env:LOCALAPPDATA\Microsoft\WindowsApps\pythonw.exe"
-if (-not (Test-Path $PythonExe)) {
-    if (Test-Path "$env:USERPROFILE\anaconda3\pythonw.exe") {
-        $PythonExe = "$env:USERPROFILE\anaconda3\pythonw.exe"
+$PythonExe = ""
+if (Test-Path "$env:USERPROFILE\anaconda3\pythonw.exe") {
+    $PythonExe = "$env:USERPROFILE\anaconda3\pythonw.exe"
+} elseif (Test-Path "$env:LOCALAPPDATA\Programs\Python\Python312\pythonw.exe") {
+    $PythonExe = "$env:LOCALAPPDATA\Programs\Python\Python312\pythonw.exe"
+} else {
+    $found = (Get-Command pythonw.exe -ErrorAction SilentlyContinue).Source
+    if ($found -and (Get-Item $found -ErrorAction SilentlyContinue).Length -gt 0) {
+        $PythonExe = $found
     } else {
         $PythonExe = "pythonw.exe"
     }
