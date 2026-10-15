@@ -24,9 +24,9 @@ JARVIS 4.0 (RUBI CORE) is an open-source, offline-first personal assistant desig
 | **Offline Speech Output** | [Piper](https://github.com/rhasspy/piper) ONNX models | **Verified** via `test_stage8_speech_output.py`. |
 | **Atomic File Storage** | Safe swap & rename (`core/storage.py`)| **Verified** via `test_stage11_notes_memory_reminders.py`. |
 | **Real-Time Telemetry** | `/diagnostics` REST endpoint | **Verified** (reports RAM, CPU, disk, task throughput). |
-| **Wake Word Detection** | Offline wake engine | *Note: Architecture verified in mock tests; not yet verified on real hardware microphone.* |
-| **Android Phone Top Bar** | Android WebView app (`mobile/android`) | *Note: Gradle project builds cleanly; not yet verified on a real physical Android device.* |
-| **YouTube Play Automation**| Browser launch & URL dispatcher | *Note: URL opening verified; in-page media control not yet verified on real device.* |
+| **Wake Word Detection** | Offline wake engine | **Verified on real device** (wake word then command, tested Oct 15, 2026). |
+| **Android Phone Top Bar** | Android WebView app (`mobile/android`) | **Verified on real device** (phone top bar, tested Oct 15, 2026). |
+| **YouTube Play Automation**| Browser launch & URL dispatcher | **Verified on real device** (YouTube song play, tested Oct 15, 2026). |
 
 ---
 

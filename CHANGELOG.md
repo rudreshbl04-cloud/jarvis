@@ -41,6 +41,11 @@ This release represents a comprehensive architectural overhaul, upgrading JARVIS
 - **Real-Time Telemetry (`/diagnostics`):** Live dashboard tracking CPU load, RAM allocation, disk capacity, task queue throughput, and Gemini circuit breaker health.
 - **Lecturer Mode Cleaned:** Deprecated legacy Lecturer mode UI and background triggers while preserving historical user notes.
 
+#### 🔍 Real-Device Verification (Oct 15, 2026)
+- **Phone Top Bar:** Verified on real device.
+- **Wake Word Then Command:** Verified on real device.
+- **YouTube Song Play:** Verified on real device.
+
 ---
 
 ## [v3.0.0] - 2026-10-11
